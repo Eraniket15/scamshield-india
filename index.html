@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scam Message Checker</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🛡️ Scam Checker</h1>
+  <button id="langBtn" class="ghost">हिंदी</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h2 data-i="title"></h2>
+    <p class="muted" data-i="sub"></p>
+  </section>
+
+  <section class="panel">
+    <textarea id="msg" rows="6" data-ip="placeholder"></textarea>
+    <div class="samples">
+      <span class="muted" data-i="try"></span>
+      <button class="chip" data-s="0">KYC</button>
+      <button class="chip" data-s="1">Lottery</button>
+      <button class="chip" data-s="2">Bijli bill</button>
+      <button class="chip" data-s="3">Job offer</button>
+      <button class="chip" data-s="4">Real bank SMS</button>
+    </div>
+    <div class="row">
+      <button id="checkBtn" data-i="check"></button>
+      <button id="clearBtn" class="ghost" data-i="clear"></button>
+    </div>
+  </section>
+
+  <section id="result" class="panel" hidden>
+    <div class="verdict">
+      <div id="badge" class="badge"></div>
+      <div class="meter"><div id="fill"></div></div>
+      <small id="score" class="muted"></small>
+    </div>
+    <h3 data-i="why"></h3>
+    <ul id="reasons"></ul>
+    <div id="linksBox"><h3 data-i="links"></h3><ul id="linkList"></ul></div>
+    <h3 data-i="todo"></h3>
+    <ol id="actions"></ol>
+    <p class="muted disclaimer" data-i="disc"></p>
+  </section>
+
+  <section class="panel help">
+    <h3 data-i="helpT"></h3>
+    <div class="grid">
+      <div><strong>1930</strong><span class="muted" data-i="h1"></span></div>
+      <div><strong>cybercrime.gov.in</strong><span class="muted" data-i="h2"></span></div>
+      <div><strong>sancharsaathi.gov.in</strong><span class="muted" data-i="h3"></span></div>
+    </div>
+  </section>
+  <p class="muted footer" data-i="privacy"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
